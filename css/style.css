@@ -1,0 +1,40 @@
+/* =========================================================
+Foundation
+========================================================= */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  font-weight: 400;
+  font-family: "Noto Sans JP", MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
+}
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #24292e;
+}
+
+li {
+  list-style: none;
+}
+
+/* =========================================================
+Layout
+========================================================= */
+/* =========================================================
+object
+========================================================= */
+/*# sourceMappingURL=style.css.map */
