@@ -12,12 +12,6 @@ body {
   font-family: "Noto Sans JP", MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
 }
 
-@media (min-width: 1920px) {
-  body {
-    font-size: 1.4rem;
-  }
-}
-
 img {
   max-width: 100%;
 }

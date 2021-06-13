@@ -11,9 +11,9 @@
   </head>
   <body>
       <header class="l-header p-header">
-        <h1 class="p-header__title u-p-header__title--pcm0 u--mt20"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></h1>
-        <nav class="p-header__nav">
-        </nav>
+      <nav class="p-header__nav">Menu</nav>  
+      <h1 class="p-header__title u-p-header__title--pcm0 u--mt20"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></h1>
+        
       </header>
 
       <div class="p-mainvisual u--mb80">
