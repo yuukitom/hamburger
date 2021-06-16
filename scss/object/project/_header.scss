@@ -1,5 +1,10 @@
+.p-header {
+  color: $base_color;
+}
+
 .p-header__gnav {
   font-size: 20px;
+  
   text-align: right;
   margin: 14px 16px 0 0;
 }
@@ -7,4 +12,13 @@
 .p-header__title {
   font-size: 40px;
   text-align: center;
+}
+
+.p-header__top {
+  &Title {
+    font-size: 4rem;
+    
+  }
+
+
 }
