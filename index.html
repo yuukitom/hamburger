@@ -18,16 +18,17 @@
           <h1 class="p-header__topTitle">Hamburger</h1>
           <form class="p-header__topSearch" action="#" method="GET">
             <input type="search" name="search">
-            <i class="fas fa-search fa-lg"></i>
-            <input type="submit" name="submit" value="検索">
+            <i class="fas fa-search fa-2x"></i>
+            <input class="c-button" type="submit" name="submit" value="検索">
           </form>
         </div>
       </header>
 
-      <div class="p-mainvisual u--mb80">
+      <div class="p-mainvisual">
         <picture>
-          <source media="(min-width: 600px)" srcset="img/mainvisual-pc.jpg">
-          <img src="img/mainvisual-sp.jpg" alt="mainvisual">
+          <source media="(min-width: 1920px)" srcset="img/mainvisual-pc.jpg">
+          <source media="(min-width: 834px)" srcset="img/mainvisual-pc.jpg">
+          <img src="img/mainvisual-sp@2x.jpg" alt="mainvisual">
         </picture>
       </div>
       
