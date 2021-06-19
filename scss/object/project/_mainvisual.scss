@@ -1,0 +1,7 @@
+.p-mainvisual {
+  background-size: cover;
+  background-position: center;
+  &__front {
+    background-image: url("../img/mainvisual-pc.jpg");
+  }
+}
