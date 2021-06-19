@@ -73,12 +73,6 @@ object
   padding-top: 14px;
 }
 
-@media (min-width: 1920px) {
-  .p-header__gnav {
-    display: none;
-  }
-}
-
 .p-header__top {
   display: flex;
   flex-direction: column;
@@ -146,5 +140,15 @@ object
 
 .p-mainvisual__front {
   background-image: url("../img/mainvisual-pc.jpg");
+}
+
+.u-displayNone--pc {
+  display: block;
+}
+
+@media (min-width: 1920px) {
+  .u-displayNone--pc {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

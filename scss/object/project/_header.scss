@@ -8,9 +8,7 @@
   text-align: right;
   margin: 0 16px 0 0;
   padding-top: 14px;
-  @include breakpoint(pc) {
-    display: none;
-  }
+  
 }
 
 .p-header__top {

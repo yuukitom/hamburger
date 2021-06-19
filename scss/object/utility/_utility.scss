@@ -1,2 +1,7 @@
-
+.u-displayNone--pc {
+  display: block;
+  @include breakpoint(pc) {
+    display: none;
+  }
+}
 
