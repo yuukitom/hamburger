@@ -1,7 +1,6 @@
 .p-header {
   color: $sub_color;
   background-color: $base_color;
-  padding-bottom: 40px;
 }
 
 .p-header__gnav {
@@ -9,19 +8,32 @@
   text-align: right;
   margin: 0 16px 0 0;
   padding-top: 14px;
+  @include breakpoint(pc) {
+    display: none;
+  }
 }
 
 .p-header__top {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 30px 0 65px;
+  @include breakpoint(pc) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
   &Title {
     font-size: 4rem;
+    @include breakpoint(pc) {
+      font-size: 6.4rem;
+    }
   }
 
   &Search {
     position: relative;
-    margin-top: 40px;
+    margin: 40px 0;
   }
 
   input[type="search"] {
@@ -32,6 +44,9 @@
     background-color: $white-color;
     border: solid 1.5px $sub-color;
     padding-left: 40px;
+    @include breakpoint(tablet) {
+      width: 396px;
+    }
   }
 
   .fa-search {

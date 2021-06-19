@@ -3,5 +3,8 @@
   height: 46px;
   padding: 12px 23px;
   border: solid 1px $sub-color;
-  border-radius: 10px;
+  border-radius: 10px; 
+  @include breakpoint(tablet) {
+    width: 136px;
+  }
 }
