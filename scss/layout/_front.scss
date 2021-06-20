@@ -1,0 +1,8 @@
+.l-main__service {
+  display: flex;
+  flex-direction: column;
+  @include breakpoint(tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

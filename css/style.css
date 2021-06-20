@@ -44,6 +44,18 @@ Layout
   }
 }
 
+.l-main__service {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 834px) {
+  .l-main__service {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 /* =========================================================
 object
 ========================================================= */
@@ -154,6 +166,12 @@ object
   margin: 20px 20px 50px 20px;
 }
 
+@media (min-width: 834px) {
+  .p-main__service {
+    margin: 40px 40px 50px 40px;
+  }
+}
+
 .p-main__service li {
   background-size: cover;
   background-position: center;
@@ -168,12 +186,51 @@ object
 }
 
 .p-main__serviceInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 170vw;
+  max-width: 357px;
+  max-height: 681px;
+}
+
+@media (min-width: 1920px) {
+  .p-main__serviceInner {
+    height: 80vw;
+    max-width: 625px;
+    max-height: 1196px;
+  }
 }
 
 .p-main__serviceTitle {
   font-size: 4.4rem;
+  font-weight: bold;
   color: #EAEAEA;
+  margin: 20px 0 0 10px;
+}
+
+@media (min-width: 1920px) {
+  .p-main__serviceTitle {
+    margin: 40px 0 0 20px;
+  }
+}
+
+.p-main__serviceCard {
+  background-color: #fff;
+  opacity: 0.8;
+  margin: 0 10px 10px 10px;
+}
+
+.p-main__serviceTerm {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 20px 0 20px 10px;
+}
+
+.p-main__serviceDesc {
+  font-size: 1.6rem;
+  line-height: 23px;
+  padding: 0 10px 50px 10px;
 }
 
 .u-displayNone--pc {

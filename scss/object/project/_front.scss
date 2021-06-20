@@ -1,6 +1,9 @@
 .p-main__service {
 
   margin: 20px 20px 50px 20px;
+  @include breakpoint(tablet) {
+    margin: 40px 40px 50px 40px;
+  }
 
   li {
     background-size: cover;
@@ -15,12 +18,46 @@
   }
 
   &Inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 170vw;
+    max-width: 357px;
+    max-height: 681px;
+    @include breakpoint(pc) {
+      height: 80vw;
+      max-width: 625px;
+      max-height: 1196px;
+    }
     
   }
 
   &Title {
     font-size: 4.4rem;
+    font-weight: bold;
     color: #EAEAEA;
+    margin: 20px 0 0 10px;
+    @include breakpoint(pc) {
+      margin: 40px 0 0 20px;
+    }
   }
+
+  &Card {
+    background-color: $white-color;
+    opacity: 0.8;
+    margin: 0 10px 10px 10px;
+  }
+
+  &Term {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 20px 0 20px 10px ;
+  }
+
+  &Desc {
+    font-size: 1.6rem;
+    line-height: 23px;
+    padding: 0 10px 50px 10px;
+  }
+
 }
