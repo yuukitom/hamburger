@@ -142,6 +142,14 @@ object
   background-image: url("../img/mainvisual-pc.jpg");
 }
 
+.p-mainvisual__title {
+  position: absolute;
+  font-size: 4rem;
+  color: #fff;
+  top: 45%;
+  left: 6vw;
+}
+
 .u-displayNone--pc {
   display: block;
 }
