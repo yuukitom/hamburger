@@ -1,0 +1,26 @@
+.p-main__service {
+
+  margin: 20px 20px 50px 20px;
+
+  li {
+    background-size: cover;
+    background-position: center;
+    &:first-child {
+      background-image: url(../img/front1.png);
+    }
+
+    &:last-child {
+      background-image: url(../img/front2.png);
+    }
+  }
+
+  &Inner {
+    height: 170vw;
+    
+  }
+
+  &Title {
+    font-size: 4.4rem;
+    color: #EAEAEA;
+  }
+}
