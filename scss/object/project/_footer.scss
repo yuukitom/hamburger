@@ -1,0 +1,26 @@
+.p-footer {
+  background-color: $footer-color;
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    li {
+      &:first-child {
+        padding-right: 10px;
+      }
+
+      &:nth-child(2) {
+        border-left: solid 1px $white-color;
+        padding-left: 10px;
+      }
+    }
+
+    a {
+      font-size: 2rem;
+      color: $white-color;
+    }
+
+  }
+
+  
+}

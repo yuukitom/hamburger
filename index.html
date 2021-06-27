@@ -15,7 +15,7 @@
     <div class="l-container">
       <div class="l-container__left">
         <header class="l-header p-header">
-          <nav class="p-header__gnav u-displayNone--pc js_navBtn">Menu</nav>  
+          <nav class="p-header__gnav u-displayNone--pc js_navBtn"><button>Menu</button></nav>  
           <div class="p-header__top">
             <h1 class="p-header__topTitle">Hamburger</h1>
             <form class="p-header__topSearch" action="#" method="GET">
@@ -80,7 +80,7 @@
 
       <div class="l-container__right p-container__right">
         <aside class="l-aside p-aside">
-          <div class="p-aside__btn"><button class="js-closeBtn">×</button></div>
+          <div class="p-aside__btn"><button class="js_navBtn">×</button></div>
           <h2 class="p-aside__title">Menu</h2>
           <ul class="p-aside__mainMenu">
             <li class="p-aside__mainItem"><a href="#">バーガー</a>
@@ -118,6 +118,15 @@
       </div> <!-- l-container__right -->
     </div> <!-- l-container -->
       
-    <footer class="l-footer p-footer"></footer>
+    <footer class="l-footer p-footer">
+      <ul class="p-footer__info">
+        <li class="p-footer__infoItem"><a href="#">ショップ情報</a></li>
+        <li class="p-footer__infoItem"><a href="#">ヒストリー</a></li>
+      </ul>
+      <p>Copyright: RaiseTech</p>
+    </footer>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/script.js"></script>
   </body>
 </html>

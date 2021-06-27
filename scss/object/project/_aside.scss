@@ -7,6 +7,7 @@
     padding-left: 30px;
     @include breakpoint(pc) {
       display: block;
+      padding-top: 80px;
     }
   }
 
@@ -16,11 +17,17 @@
     color: $sub-color;
     text-align: right;
     padding-right: 20px;
+    @include breakpoint(pc) {
+      display: none;
+    }
   }
 
   &__mainMenu {
     padding: 0 40px;
-    margin: 200px 0;
+    margin: 180px 0;
+    @include breakpoint(pc) {
+      margin: 80px 0;
+    }
   }
 
   &__mainItem{
@@ -30,10 +37,6 @@
       font-weight: bold;
       padding: 20px 0;
     }
-  }
-
-  &__subMenu {
-
   }
 
   &__subItem {
