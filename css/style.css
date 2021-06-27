@@ -28,6 +28,30 @@ li {
 /* =========================================================
 Layout
 ========================================================= */
+.l-container {
+  display: flex;
+}
+
+@media (min-width: 1920px) {
+  .l-container__left {
+    width: 80%;
+  }
+}
+
+.l-container__right {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+}
+
+@media (min-width: 1920px) {
+  .l-container__right {
+    width: 20%;
+    height: auto;
+  }
+}
+
 .l-header {
   width: 100%;
 }
@@ -56,6 +80,16 @@ Layout
   }
 }
 
+.l-aside {
+  background-color: #FFF7EF;
+}
+
+@media (min-width: 1920px) {
+  .l-aside {
+    width: 100%;
+  }
+}
+
 /* =========================================================
 object
 ========================================================= */
@@ -70,6 +104,17 @@ object
 @media (min-width: 834px) {
   .c-button {
     width: 136px;
+  }
+}
+
+.p-container__right {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1920px) {
+  .p-container__right {
+    position: static;
   }
 }
 
@@ -362,6 +407,49 @@ object
     width: 60%;
     height: 649px;
   }
+}
+
+.p-aside {
+  overflow-y: auto;
+}
+
+.p-aside__title {
+  display: none;
+  font-size: 3.4rem;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+@media (min-width: 1920px) {
+  .p-aside__title {
+    display: block;
+  }
+}
+
+.p-aside__btn {
+  font-size: 7rem;
+  line-height: 60px;
+  color: #707070;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.p-aside__mainMenu {
+  padding: 0 40px;
+  margin: 200px 0;
+}
+
+.p-aside__mainItem a {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.p-aside__subItem a {
+  font-size: 2.0rem;
+  font-weight: normal;
+  padding: 10px;
 }
 
 .u-displayNone--pc {

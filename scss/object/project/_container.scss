@@ -1,0 +1,7 @@
+.p-container__right {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  @include breakpoint(pc) {
+    position: static;
+  }
+}
