@@ -4,15 +4,20 @@
   &__info {
     display: flex;
     justify-content: center;
+    padding: 30px 0;
     li {
       &:first-child {
         padding-right: 10px;
+        
       }
 
       &:nth-child(2) {
-        border-left: solid 1px $white-color;
         padding-left: 10px;
       }
+    }
+
+    li + li {
+      border-left: solid 2px $white-color;
     }
 
     a {
@@ -22,5 +27,9 @@
 
   }
 
-  
+  p {
+    font-size: 1.4rem;
+    color: $white-color;
+    text-align: center;
+  }
 }
