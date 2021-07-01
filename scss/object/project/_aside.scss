@@ -1,9 +1,11 @@
 .p-aside {
   overflow-y: auto;
+  background-color: $sidebar-color;
   &__title {
     display: none;
     font-size: 3.4rem;
     font-weight: bold;
+    color: $sub-color;
     padding-left: 30px;
     @include breakpoint(pc) {
       display: block;
@@ -35,6 +37,7 @@
       display: block;
       font-size: 2.4rem;
       font-weight: bold;
+      color: $sub-color;
       padding: 20px 0;
     }
   }

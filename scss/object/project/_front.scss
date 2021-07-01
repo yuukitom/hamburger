@@ -38,12 +38,10 @@
 
   &Title {
     position: relative;
-    font-size: 4.4rem;
-    font-weight: bold;
+    font-size: 4rem;
     color: #EAEAEA;
     margin: 20px 0 0 10px;
     @include breakpoint(pc) {
-      font-size: 8rem;
       margin: 40px 0 0 20px;
     }
     &::after {
@@ -99,7 +97,7 @@
     height: 100%;
     padding: 40px;
     @include breakpoint(pc) {
-      padding-top: 80px;
+      padding-top: 60px;
       padding-left: 7%;
     }
   }
@@ -131,7 +129,7 @@
       left: 0;
       bottom: -20px;
       @include breakpoint(pc) {
-        bottom: -55px;
+        bottom: -50px;
       }
     }
     @include breakpoint(pc) {
@@ -146,8 +144,8 @@
     margin-top: 40px;
     @include breakpoint(pc) {
       font-size: 1.6rem;
-      width: 45%;
-      margin-top: 120px;
+      width: 50%;
+      margin-top: 100px;
     }
   }
 
