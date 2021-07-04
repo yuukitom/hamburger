@@ -1,4 +1,4 @@
-.c-button {
+.c-search__button {
   width: 78px;
   height: 46px;
   padding: 12px 23px;
@@ -6,5 +6,54 @@
   border-radius: 10px; 
   @include breakpoint(tablet) {
     width: 136px;
+  }
+}
+
+.c-menuCard {
+  display: flex;
+  flex-direction: column;
+  height: 585px;
+  @include breakpoint(tablet) {
+    flex-direction: row;
+    height: 354px;
+  }
+  @include breakpoint(pc) {
+    height: 471px;
+  }
+}
+
+.c-menuCard__button {
+  width: 165px;
+  height: 45px;
+  text-align: center;
+  border-radius: 25px; 
+  margin: 0 auto;
+  
+  @include breakpoint(tablet) {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+.c-pagination {
+  display: flex;
+  justify-content: space-between;
+  &__arrow {
+    padding: 10px 15px;
+  }
+
+  &__num {
+    display: none;
+    padding: 10px 15px;
+    border: solid 1px $sub-color;
+    @include breakpoint(tablet) {
+      display: block;
+    }
+  }
+  .this {
+    background-color: $archive-back;
+    a {
+      color: $white-color;
+    }
   }
 }

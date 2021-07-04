@@ -83,7 +83,7 @@ Layout
 /* =========================================================
 object
 ========================================================= */
-.c-button {
+.c-search__button {
   width: 78px;
   height: 46px;
   padding: 12px 23px;
@@ -92,9 +92,72 @@ object
 }
 
 @media (min-width: 768px) {
-  .c-button {
+  .c-search__button {
     width: 136px;
   }
+}
+
+.c-menuCard {
+  display: flex;
+  flex-direction: column;
+  height: 585px;
+}
+
+@media (min-width: 768px) {
+  .c-menuCard {
+    flex-direction: row;
+    height: 354px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .c-menuCard {
+    height: 471px;
+  }
+}
+
+.c-menuCard__button {
+  width: 165px;
+  height: 45px;
+  text-align: center;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .c-menuCard__button {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+.c-pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-pagination__arrow {
+  padding: 10px 15px;
+}
+
+.c-pagination__num {
+  display: none;
+  padding: 10px 15px;
+  border: solid 1px #707070;
+}
+
+@media (min-width: 768px) {
+  .c-pagination__num {
+    display: block;
+  }
+}
+
+.c-pagination .this {
+  background-color: #3C2B1C;
+}
+
+.c-pagination .this a {
+  color: #fff;
 }
 
 .p-container__right {
@@ -456,6 +519,139 @@ object
     width: 60%;
     height: 649px;
   }
+}
+
+.p-main__desc {
+  margin: 5%;
+}
+
+.p-main__descTitle {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .p-main__descTitle {
+    font-size: 3.6rem;
+  }
+}
+
+.p-main__desc > p {
+  font-size: 1.6rem;
+}
+
+.p-menuCard {
+  margin: 5%;
+}
+
+@media (min-width: 768px) {
+  .p-menuCard {
+    margin: 2% 5%;
+  }
+}
+
+.p-menuCard img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .p-menuCard img {
+    width: 50%;
+  }
+}
+
+.p-menuCard__text {
+  background-color: #3C2B1C;
+  height: 100%;
+  padding: 30px 6% 30px 6%;
+}
+
+@media (min-width: 768px) {
+  .p-menuCard__text {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .p-menuCard__text {
+    padding: 50px 6% 60px 6%;
+  }
+}
+
+.p-menuCard__text h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1201px) {
+  .p-menuCard__text h1 {
+    font-size: 3.6rem;
+    margin-bottom: 30px;
+  }
+}
+
+.p-menuCard__desc {
+  height: 65%;
+}
+
+.p-menuCard__desc h2 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1201px) {
+  .p-menuCard__desc h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+}
+
+.p-menuCard__desc p {
+  font-size: 1.6rem;
+  color: #fff;
+  height: 80%;
+  overflow: hidden;
+}
+
+.p-menuCard__button {
+  background-color: #fff;
+  border: solid 1px #707070;
+  line-height: 45px;
+}
+
+@media (min-width: 768px) {
+  .p-menuCard__button {
+    line-height: 50px;
+  }
+}
+
+.p-menuCard__button a {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.p-pagination {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .p-pagination {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-pagination {
+    margin-top: 150px;
+    margin-bottom: 60px;
+  }
+}
+
+.p-pagination a {
+  font-size: 1.6rem;
 }
 
 .p-aside {

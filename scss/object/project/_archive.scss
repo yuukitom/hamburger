@@ -1,0 +1,100 @@
+.p-main__desc {
+  margin: 5%;
+
+  &Title {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    @include breakpoint(tablet) {
+      font-size: 3.6rem;
+    }
+  }
+
+  &>p {
+    font-size: 1.6rem;
+  }
+}
+
+.p-menuCard {
+  margin: 5%;
+  @include breakpoint(tablet) {
+    margin: 2% 5%;
+  }
+
+  img {
+    width: 100%;
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
+  }
+
+  &__text {
+    background-color: $archive-back;
+    height: 100%;
+    padding: 30px 6% 30px 6%;
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
+    @include breakpoint(pc) {
+      padding: 50px 6% 60px 6%;
+    }
+    h1 {
+      font-size: 2rem;
+      color: $white-color;
+      margin-bottom: 20px;
+      @include breakpoint(pc) {
+        font-size: 3.6rem;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__desc {
+    height: 65%;
+    h2 {
+      font-size: 1.6rem;
+      color: $white-color;
+      margin-bottom: 10px;
+      @include breakpoint(pc) {
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: $white-color;
+      height: 80%;
+      overflow: hidden;
+    }
+  }
+}
+
+.p-menuCard__button {
+  background-color: $white-color;
+  border: solid 1px $sub-color;
+  line-height: 45px;
+  @include breakpoint(tablet) {
+    line-height: 50px;
+  }
+
+  a {
+    display: block;
+    font-size: 1.6rem;
+  }
+}
+
+.p-pagination {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  @include breakpoint(tablet) {
+    margin-top: 100px;
+  }
+  @include breakpoint(tablet) {
+    margin-top: 150px;
+    margin-bottom: 60px;
+  }
+
+  a {
+    font-size: 1.6rem;
+  }
+}
