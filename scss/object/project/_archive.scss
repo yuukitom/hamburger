@@ -84,17 +84,56 @@
 }
 
 .p-pagination {
-  margin-top: 60px;
-  margin-bottom: 30px;
-  @include breakpoint(tablet) {
-    margin-top: 100px;
-  }
-  @include breakpoint(tablet) {
-    margin-top: 150px;
-    margin-bottom: 60px;
+  height: 25vh;
+  display: flex;
+  align-items: flex-end;
+  margin: 20px;
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 36px;
   }
 
-  a {
+  a, span {
     font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  &__pages {
+    display: none;
+  }
+
+  &__prev {
+    position: relative;
+    line-height: 35px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      right: 36px;
+      background-image: url("../img/prev.svg");
+      background-position: center;
+    } 
+  }
+
+  &__num {
+    display: none;
+  }
+
+  &__next {
+    position: relative;
+    line-height: 35px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 36px;
+      background-image: url("../img/next.svg");
+      background-position: center;
+    } 
   }
 }

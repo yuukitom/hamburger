@@ -34,26 +34,3 @@
     height: 50px;
   }
 }
-
-.c-pagination {
-  display: flex;
-  justify-content: space-between;
-  &__arrow {
-    padding: 10px 15px;
-  }
-
-  &__num {
-    display: none;
-    padding: 10px 15px;
-    border: solid 1px $sub-color;
-    @include breakpoint(tablet) {
-      display: block;
-    }
-  }
-  .this {
-    background-color: $archive-back;
-    a {
-      color: $white-color;
-    }
-  }
-}
