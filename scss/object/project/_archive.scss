@@ -88,12 +88,21 @@
   display: flex;
   align-items: flex-end;
   margin: 20px;
+  @include breakpoint(tablet) {
+    justify-content: center;
+    margin: 40px;
+  }
   
   &__wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 0 36px;
+    @include breakpoint(tablet) {
+      width: auto;
+      max-width: 600px;
+      padding: 0;
+    }
   }
 
   a, span {
@@ -103,6 +112,11 @@
 
   &__pages {
     display: none;
+    @include breakpoint(tablet) {
+      display: inline-block;
+      line-height: 35px;
+      margin-right: 20px;
+    }
   }
 
   &__prev {
@@ -116,11 +130,30 @@
       right: 36px;
       background-image: url("../img/prev.svg");
       background-position: center;
-    } 
+      @include breakpoint(tablet) {
+        position: static;
+        display: inline-block;
+      }
+    }
+
+    span {
+      @include breakpoint(tablet) {
+        display: none;
+      }
+    }
   }
 
   &__num {
     display: none;
+    @include breakpoint(tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      border: solid 1px $sub-color;
+      margin: 0 5px;
+    }
   }
 
   &__next {
@@ -134,6 +167,21 @@
       left: 36px;
       background-image: url("../img/next.svg");
       background-position: center;
-    } 
+      @include breakpoint(tablet) {
+        position: static;
+        display: inline-block;
+      }
+    }
+    
+    span {
+      @include breakpoint(tablet) {
+        display: none;
+      }
+    }
   }
+}
+
+.current {
+  color: $white-color;
+  background-color: $archive-back;
 }

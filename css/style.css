@@ -610,11 +610,26 @@ object
   margin: 20px;
 }
 
+@media (min-width: 768px) {
+  .p-pagination {
+    justify-content: center;
+    margin: 40px;
+  }
+}
+
 .p-pagination__wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 0 36px;
+}
+
+@media (min-width: 768px) {
+  .p-pagination__wrapper {
+    width: auto;
+    max-width: 600px;
+    padding: 0;
+  }
 }
 
 .p-pagination a, .p-pagination span {
@@ -624,6 +639,14 @@ object
 
 .p-pagination__pages {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .p-pagination__pages {
+    display: inline-block;
+    line-height: 35px;
+    margin-right: 20px;
+  }
 }
 
 .p-pagination__prev {
@@ -641,8 +664,33 @@ object
   background-position: center;
 }
 
+@media (min-width: 768px) {
+  .p-pagination__prev::before {
+    position: static;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-pagination__prev span {
+    display: none;
+  }
+}
+
 .p-pagination__num {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .p-pagination__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: solid 1px #707070;
+    margin: 0 5px;
+  }
 }
 
 .p-pagination__next {
@@ -658,6 +706,24 @@ object
   left: 36px;
   background-image: url("../img/next.svg");
   background-position: center;
+}
+
+@media (min-width: 768px) {
+  .p-pagination__next::after {
+    position: static;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-pagination__next span {
+    display: none;
+  }
+}
+
+.current {
+  color: #fff;
+  background-color: #3C2B1C;
 }
 
 .p-aside {
