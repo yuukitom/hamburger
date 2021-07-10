@@ -116,6 +116,10 @@ object
   }
 }
 
+.c-menuCard img {
+  object-fit: cover;
+}
+
 .c-menuCard__button {
   width: 165px;
   height: 45px;
@@ -250,6 +254,12 @@ object
   background-position: 25% 45%;
 }
 
+@media (min-width: 1201px) {
+  .p-mainvisual__archive {
+    height: 240px;
+  }
+}
+
 .p-mainvisual__archiveBack {
   display: flex;
   flex-direction: column;
@@ -264,6 +274,18 @@ object
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+  }
+}
+
+.p-mainvisual__single {
+  background-image: url("../img/single_mainvisual.jpg");
+  background-size: cover;
+  height: 225px;
+}
+
+@media (min-width: 768px) {
+  .p-mainvisual__single {
+    height: 500px;
   }
 }
 
@@ -724,6 +746,124 @@ object
 .current {
   color: #fff;
   background-color: #3C2B1C;
+}
+
+.p-post {
+  padding: 0 5%;
+}
+
+.p-post h2 {
+  font-size: 2.8rem;
+  margin: 5% 0;
+}
+
+@media (min-width: 768px) {
+  .p-post h2 {
+    font-size: 3.6rem;
+  }
+}
+
+.p-post p {
+  font-size: 1.6rem;
+  margin-bottom: 5%;
+}
+
+.p-post h3 {
+  font-size: 2.4rem;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 768px) {
+  .p-post h3 {
+    font-size: 2.8rem;
+  }
+}
+
+.p-post h4, .p-post h5, .p-post h6 {
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.p-post blockquote {
+  background-color: #F5F5F5;
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+.p-post cite {
+  font-size: 1.6rem;
+  font-style: normal;
+}
+
+.p-post__imageL {
+  margin-bottom: 16px;
+}
+
+.p-post__imageL img {
+  width: 100%;
+  object-fit: cover;
+  height: 30vw;
+  margin: 5% 0;
+}
+
+.p-post__imageText {
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-post__imageText img {
+  width: 42%;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.p-post__imageText p {
+  width: 54%;
+  margin: 0;
+}
+
+.p-post__imageM {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.p-post__imageM img {
+  width: 80%;
+  max-width: 600px;
+  object-fit: cover;
+  margin: 5% 0;
+}
+
+.p-post__imageList {
+  margin-bottom: 8%;
+}
+
+@media (min-width: 768px) {
+  .p-post__imageList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-post__imageList li {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .p-post__imageList li {
+    width: 32%;
+  }
+}
+
+.p-post__imageList li img {
+  width: 100%;
+  vertical-align: bottom;
+  object-fit: cover;
+  margin-bottom: 5%;
 }
 
 .p-aside {

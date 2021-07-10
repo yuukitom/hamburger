@@ -20,6 +20,10 @@
   @include breakpoint(pc) {
     height: 471px;
   }
+
+  img {
+    object-fit: cover;
+  }
 }
 
 .c-menuCard__button {
@@ -33,4 +37,5 @@
     width: 200px;
     height: 50px;
   }
+
 }

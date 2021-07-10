@@ -14,6 +14,9 @@
     background-image: url("../img/archive_mainvisual.jpg");
     background-size: auto;
     background-position: 25% 45%;
+    @include breakpoint(pc) {
+      height: 240px;
+    }
     
     &Back {
       display: flex;
@@ -28,6 +31,16 @@
         align-items: center;
       }
     }
+  }
+
+  &__single {
+    background-image: url("../img/single_mainvisual.jpg");
+    background-size: cover;
+    height: 225px;
+    @include breakpoint(tablet) {
+      height: 500px;
+    }
+
   }
 
   &__title {
