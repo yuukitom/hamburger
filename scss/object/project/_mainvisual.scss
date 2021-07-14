@@ -36,11 +36,21 @@
   &__single {
     background-image: url("../img/single_mainvisual.jpg");
     background-size: cover;
+    
     height: 225px;
     @include breakpoint(tablet) {
       height: 500px;
     }
 
+  }
+
+  &__page {
+    background-image: url("../img/page_mainvisual.jpg");
+    background-size: cover;
+    height: 225px;
+    @include breakpoint(tablet) {
+      height: 500px;
+    }
   }
 
   &__title {

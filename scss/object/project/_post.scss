@@ -1,6 +1,5 @@
 .p-post {
   padding: 0 5%;
-
   h2 {
     font-size: 2.8rem;
     margin: 5% 0;
@@ -45,7 +44,6 @@
       width: 100%;
       object-fit: cover;
       height: 30vw;
-      margin: 5% 0;
     }
   }
 
@@ -61,7 +59,6 @@
     }
     p {
       width: 54%;
-      margin: 0;
     }
   }
 
@@ -73,7 +70,6 @@
       width: 80%;
       max-width: 600px;
       object-fit: cover;
-      margin: 5% 0;
     }
   }
 
@@ -100,7 +96,67 @@
         
       }
     }
-  } 
+  }
+
+  &__menu__ol {
+    padding-left: 20px;
+    margin-bottom: 5%;
+    li {
+      list-style: auto;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__menu__ul {
+    padding-left: 0;
+    margin-bottom: 5%;
+    li {
+      list-style: none;
+      font-size: 1.6rem;
+    }
+  }
+
+  pre {
+    background-color: $post-back;
+    padding: 40px;
+    margin: 5% 0;
+    code {
+      font-size: 1.6rem;
+      font-family: "M+ 1m";
+      overflow:auto;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5% 0;
+    td {
+      font-size: 1.6rem;
+      border: solid 1px $sub-color;
+      padding: 30px 0 30px 30px;
+      &:first-child {
+        width: 40%;
+        
+      } 
+      &:last-child {
+        width: 60%;
+        
+      }
+    }
+  }
+
+  &__button {
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: solid 1px $sub-color;
+    background-color: $sidebar-color;
+    padding: 30px 0;
+    margin: 5% 0;
+    @include breakpoint(tablet) {
+      padding: 40px 0;
+    }
+  }
 
 }
 

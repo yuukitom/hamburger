@@ -28,8 +28,12 @@
 
   &Title {
     font-size: 4rem;
+    color: $sub-color;
     @include breakpoint(pc) {
       font-size: 6.4rem;
+    }
+    a {
+      color: $sub-color;
     }
   }
 
